@@ -5,11 +5,10 @@ By default, Docker provides two network drivers for you, the bridge and the over
 
 **docker network ls**
 
-   <pre> NETWORK ID          NAME                DRIVER
-         xxxxxxxxxxxx        none                null
-         xxxxxxxxxxxx        host                host
-         xxxxxxxxxxxx        bridge              bridge
-   </pre>
+<pre> NETWORK ID          NAME                DRIVER
+      xxxxxxxxxxxx        none                null
+      xxxxxxxxxxxx        host                host
+      xxxxxxxxxxxx        bridge              bridge</pre>
 # Types of Network Drivers
 
     **bridge:** If you build a container without specifying the kind of driver, the container will only be created in the bridge network, which is the default network. 
