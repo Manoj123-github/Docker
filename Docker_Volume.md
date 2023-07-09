@@ -23,6 +23,7 @@ There are 2 different ways how docker solves this problem.
 # Volumes
 
 Volumes aims to solve the same problem by providing a way to store data on the host file system, separate from the container's file system, so that the data can persist even if the container is deleted and recreated.
+
 Volumes can be created and managed using the docker volume command. You can create a new volume using the following command:
 
 **docker volume create <volume_name>**
@@ -37,6 +38,7 @@ This command will mount the volume <volume_name> to the /data directory in the c
 # Bind Directory on a host as a Mount
 
 Bind mounts also aims to solve the same problem but in a complete different way.
+
 Using this way, user can mount a directory from the host file system into a container. Bind mounts have the same behavior as volumes, but are specified using a host path instead of a volume name.
 For example,
 
@@ -44,5 +46,6 @@ For example,
 
 # tmpfs mounts
 If you’re running Docker on Linux, you have a third option: tmpfs mounts. When you create a container with a tmpfs mount, the container can create files outside the container’s writable layer.
+
 As opposed to volumes and bind mounts, a tmpfs mount is temporary, and only persisted in the host memory. When the container stops, the tmpfs mount is removed, and files written there won’t be persisted.
    
