@@ -31,3 +31,23 @@ Docker is a containerization platform that provides easy way to containerize you
 In simple words, you can understand as containerization is a concept or technology and Docker Implements Containerization.
 
 Docker is a set of platforms as a service (PaaS) products that use the Operating system level visualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and therefore use fewer resources than a virtual machine.
+
+# Docker Architecture 
+
+![image](https://github.com/Manoj123-github/Docker/assets/76830665/02d83aa6-2a31-481e-a6a9-c3f8d05d5e54)
+
+# Docker Daemon
+Docker daemon manages all the services by communicating with other daemons. It manages docker objects such as images, containers, networks, and volumes with the help of the API requests of Docker.
+
+sudo systemctl start/stop/status docker 
+
+# Docker Client
+he docker client, the docker users can interact with the docker. The docker command uses the Docker API. The Docker client can communicate with multiple daemons. When a docker client runs any docker command on the docker terminal then the terminal sends instructions to the daemon. The Docker daemon gets those instructions from the docker client withinside the shape of the command and REST API’s request.
+
+# Docker registries 
+All the docker images are stored in the docker registry. There is a public registry which is known as a docker hub that can be used by anyone. We can run our private registry also. With the help of docker run or docker pull commands, we can pull the required images from our configured registry.
+
+# Docker Images
+An image contains instructions for creating a docker container. It is just a read-only template. It is used to store and ship applications. 
+You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image.
+
