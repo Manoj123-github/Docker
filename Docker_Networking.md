@@ -11,7 +11,7 @@ By default, Docker provides two network drivers for you, the bridge and the over
       xxxxxxxxxxxx        bridge              bridge</pre>
 # Types of Network Drivers
 
-    bridge: If you build a container without specifying the kind of driver, the container will only be created in the bridge network, which is the default network. 
+    <b> bridge:</b> If you build a container without specifying the kind of driver, the container will only be created in the bridge network, which is the default network. 
     host: Containers will not have any IP address they will be directly created in the system network which will remove isolation between the docker host and containers. 
     none: IP addresses won’t be assigned to containers. These containments are not accessible to us from the outside or from any other container.
     overlay: overlay network will enable the connection between multiple Docker demons and make different Docker swarm services communicate with each other.
