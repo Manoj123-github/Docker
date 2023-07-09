@@ -32,6 +32,20 @@ In simple words, you can understand as containerization is a concept or technolo
 
 Docker is a set of platforms as a service (PaaS) products that use the Operating system level visualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and therefore use fewer resources than a virtual machine.
 
+# Features of Docker:
+
+    Open-source platform
+    An Easy, lightweight, and consistent way of  delivery of applications
+    Fast and efficient development life cycle.
+    Segregation of duties
+    Service-oriented architecture
+    Security 
+    Scalability
+    Reduction in size
+    Image management
+    Networking
+    Volume management
+
 # Docker Architecture 
 
 ![image](https://github.com/Manoj123-github/Docker/assets/76830665/02d83aa6-2a31-481e-a6a9-c3f8d05d5e54)
