@@ -31,11 +31,11 @@ Now, if you list the docker networks, you will see a new network.
 
 docker network ls
 
-NETWORK ID          NAME                DRIVER
+<pre> NETWORK ID          NAME                DRIVER
 xxxxxxxxxxxx        bridge              bridge
 xxxxxxxxxxxx        my_bridge           bridge
 xxxxxxxxxxxx        none                null
-xxxxxxxxxxxx        host                host
+xxxxxxxxxxxx        host                host</pre>
 
 This new network can be attached to the containers, when you run these containers.
 
