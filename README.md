@@ -51,3 +51,6 @@ All the docker images are stored in the docker registry. There is a public regis
 An image contains instructions for creating a docker container. It is just a read-only template. It is used to store and ship applications. 
 You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image.
 
+# Dockerfile
+
+Dockerfile is a file where you provide the steps to build your Docker Image.
